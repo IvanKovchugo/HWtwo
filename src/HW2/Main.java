@@ -1,14 +1,19 @@
 package HW2;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
+        boolean sum = xx(10,5);
+        System.out.println(sum );
+        xx_2(10);
+        boolean s = xx_3(-1);
+        xx_4("World", 15);
 
     }
 
     public static boolean xx(int a, int b) {
-        a = 10;
-        b = 5;
         int sum = a + b;
         if (sum > 10 && sum < 20) {
             System.out.println("Сумма в пределах от 10 до 20");
@@ -21,7 +26,6 @@ public class Main {
     }
 
     public static void xx_2(int a) {
-        a = 0;
         if (a >= 0) {
             System.out.println("Значение положительное");
         } else {
@@ -30,7 +34,6 @@ public class Main {
     }
 
     public static boolean xx_3(int a) {
-        a = 5;
         if (a >= 0) {
             System.out.println("Значение положительное");
             return false;
@@ -41,8 +44,9 @@ public class Main {
     }
 
     public static void xx_4(String how, int much) {
-        how = "word";
-        for (much = 0; much < 10; much++) {
+        Scanner scanner = new Scanner(System.in);
+        int num = scanner.nextInt();
+        for (much = 0; much < num; much++) {
             System.out.println(how);
         }
     }
