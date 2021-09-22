@@ -3,10 +3,7 @@ package HW2;
 public class Main {
 
     public static void main(String[] args) {
-     xx();
-     xx_2();
-     xx_3();
-     xx_4();
+
     }
 
     public static boolean xx(int a, int b) {
