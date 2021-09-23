@@ -7,10 +7,11 @@ public class Main {
     public static void main(String[] args) {
         boolean sum = xx(10,5);
         System.out.println(sum );
-        xx_2(10);
-        boolean s = xx_3(-1);
-        xx_4("World", 15);
-
+        xx(10);
+        boolean s = xx_2(-1);
+        xx_2("World", 15);
+        boolean c = x_5(4,100,400);
+        System.out.println(x_5(4,100, 400));
     }
 
     public static boolean xx(int a, int b) {
@@ -25,7 +26,7 @@ public class Main {
 
     }
 
-    public static void xx_2(int a) {
+    public static void xx(int a) {
         if (a >= 0) {
             System.out.println("Значение положительное");
         } else {
@@ -33,7 +34,7 @@ public class Main {
         }
     }
 
-    public static boolean xx_3(int a) {
+    public static boolean xx_2(int a) {
         if (a >= 0) {
             System.out.println("Значение положительное");
             return false;
@@ -43,11 +44,18 @@ public class Main {
         }
     }
 
-    public static void xx_4(String how, int much) {
+    public static void xx_2(String how, int much) {
         Scanner scanner = new Scanner(System.in);
         int num = scanner.nextInt();
         for (much = 0; much < num; much++) {
             System.out.println(how);
         }
     }
+    public static boolean x_5( int a, int b, int c) {
+        Scanner scanner = new Scanner(System.in);
+        int year = scanner.nextInt();
+        return  ((year % a == 0) || (year % c == 0)) && (year % b!= 0);
+
+    }
+
 }
