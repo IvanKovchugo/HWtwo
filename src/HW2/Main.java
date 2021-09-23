@@ -54,7 +54,7 @@ public class Main {
     public static boolean x_5( int a, int b, int c) {
         Scanner scanner = new Scanner(System.in);
         int year = scanner.nextInt();
-        return  ((year % a == 0) || (year % c == 0)) && (year % b!= 0);
+        return  ((year % a == 0) || (year % c == 0)) && (year % b!= 0); // Нужно 2 раза ввести число чтобы написало true или false
 
     }
 
